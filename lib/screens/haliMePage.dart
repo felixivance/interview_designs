@@ -18,7 +18,7 @@ class _HaliMePageState extends State<HaliMePage> {
         centerTitle: false,
         title: Row(
           children: <Widget>[
-            Text("Hali ", style: TextStyle(color: OrangeColor, fontSize: 30),),
+            Text("Hali ", style: TextStyle(color: OrangeColor, fontSize: 30, fontWeight: FontWeight.bold),),
             Text("Me", style: TextStyle(color: Colors.black,fontSize: 30),),
           ],
         ),
@@ -67,9 +67,11 @@ class _HaliMePageState extends State<HaliMePage> {
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
+            SizedBox(height: 30,),
             Row(
               children: <Widget>[
                 Icon(Icons.chevron_left, size: 70,),
+                SizedBox(width: 20,),
                 Text("Mood Stats", style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),)
               ],
             ),
