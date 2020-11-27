@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:interview_designs/config/constants.dart';
+import 'package:interview_designs/screens/haliMePage.dart';
 import 'package:interview_designs/screens/myLoans.dart';
 
 class MainScreen extends StatefulWidget {
@@ -49,7 +50,7 @@ class _MainScreenState extends State<MainScreen> {
             Center(
               child: MaterialButton(
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => MyLoansPage()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => HaliMePage()));
                 },
                 color: OrangeColor,
                 padding: EdgeInsets.symmetric(
