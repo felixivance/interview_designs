@@ -21,13 +21,13 @@ var loansData = [
   {
     'color': BlueColor,
     'date': '21ST \nMAY',
-    'providerImageUrl': 'assets/images/branch.jpg',
+    'providerImageUrl': 'assets/images/branch.png',
     'amount': '3,400',
   },
   {
     'color': BlueColor,
     'date': '23RD \nMAY',
-    'providerImageUrl': 'assets/images/mshwari.jpg',
+    'providerImageUrl': 'assets/images/mshwari.png',
     'amount': '4,500',
   },
 
