@@ -151,7 +151,7 @@ class _MyLoansPageState extends State<MyLoansPage> {
                               flex: 1,
                               child: Container(
                                 width: 50,
-                                height: 80,
+                                height: 70,
                                 padding: EdgeInsets.symmetric(
                                   vertical: 15,
                                   horizontal: 20,

@@ -15,7 +15,7 @@ var loansData = [
   {
     'color': OrangeColor,
     'date': '15TH \nMAY',
-    'providerImageUrl': 'assets/images/kcbmpesa.jpg',
+    'providerImageUrl': 'assets/images/kcbmpesa.png',
     'amount': '2,500',
   },
   {
