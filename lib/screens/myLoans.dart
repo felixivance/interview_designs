@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:interview_designs/config/constants.dart';
+import 'package:interview_designs/widgets/loansBottomNavBar.dart';
 
 class MyLoansPage extends StatefulWidget {
   @override
@@ -28,8 +29,9 @@ class _MyLoansPageState extends State<MyLoansPage> {
             ),
           )
         ],
-        leading: SizedBox(),
+        leading: SizedBox(), //for screenshot purposes // comment to enable go back button
       ),
+      bottomNavigationBar: bottomNavigation(context),
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
