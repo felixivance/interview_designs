@@ -14,7 +14,7 @@ class _HaliMePageState extends State<HaliMePage> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0.0,
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.transparent,
         centerTitle: false,
         title: Row(
           children: <Widget>[
@@ -66,8 +66,9 @@ class _HaliMePageState extends State<HaliMePage> {
       ),
       body: SingleChildScrollView(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            SizedBox(height: 30,),
+            SizedBox(height: 20,),
             Row(
               children: <Widget>[
                 Icon(Icons.chevron_left, size: 70,),
@@ -140,8 +141,87 @@ class _HaliMePageState extends State<HaliMePage> {
               ],
             ),
             Padding(
-              padding: const EdgeInsets.only(left:10),
-              child: Text("Overall Mood Performance",style: TextStyle(fontSize: 30, color: BlueColor, ),),
+              padding: const EdgeInsets.only(left:20),
+              child: Text("Overall Mood Performance",style: TextStyle(fontSize: 18, color: Colors.black, fontWeight: FontWeight.bold ),),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left:10.0),
+              child: Container(
+                  height: size.height * .55, //70 % of screen height,
+                  child: ListView.builder(
+                    itemCount: moodData.length,
+                    itemBuilder: (BuildContext context, int index) {
+                      return Card(
+                        color: Colors.transparent,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(15.0),
+                        ),
+                        child: new Container(
+                          height: size.height * .1,
+                          decoration: BoxDecoration(
+                            gradient: LinearGradient(
+                                colors: [
+                                   moodData[index]['colorOne'],
+                                moodData[index]['colorTwo'],
+                                ],
+                                begin: const FractionalOffset(0.0, 0.0),
+                                end: const FractionalOffset(1.0, 0.0),
+                                stops: [0.0, 1.0],
+                                tileMode: TileMode.clamp,
+                            ),
+                            borderRadius:  BorderRadius.circular(15.0),
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: <Widget>[
+                              Expanded(
+                                flex: 1,
+                                child: Container(
+                                  width: 50,
+                                  height: 70,
+                                  padding: EdgeInsets.symmetric(
+                                    vertical: 15,
+                                    horizontal: 20,
+                                  ),
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(20),
+                                    color: Colors.transparent,
+                                  ),
+                                  child: Image.asset(moodData[index]['emoji'],),
+                                ),
+                              ),
+                              Expanded(
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.start,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: <Widget>[
+                                    SizedBox(height: 25,),
+                                    Text(moodData[index]['title'], style: TextStyle(color: Colors.white, fontSize: 18),),
+                                    Text(moodData[index]['stats'],style: TextStyle(color: Colors.white,fontSize: 14)),
+                                  ],
+                                ),
+                              ),
+                              Expanded(
+                                child: Center(
+                                  child: Column(
+                                    children: <Widget>[
+                                      SizedBox(height: 25,),
+                                      Text(moodData[index]['percentage'],style: TextStyle(color: Colors.white, fontSize: 25)),
+                                    ],
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      );
+                    },
+                  )
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left:20),
+              child: Text("Tag Analysis",style: TextStyle(fontSize: 18, color: Colors.black, fontWeight: FontWeight.bold ),),
             ),
           ],
         ),
