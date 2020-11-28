@@ -223,8 +223,101 @@ class _HaliMePageState extends State<HaliMePage> {
               padding: const EdgeInsets.only(left:20),
               child: Text("Tag Analysis",style: TextStyle(fontSize: 18, color: Colors.black, fontWeight: FontWeight.bold ),),
             ),
+            Container(
+                margin: EdgeInsets.symmetric(vertical: 5.0),
+                height: 250.0,
+                child: new ListView(
+                  scrollDirection: Axis.horizontal,
+                  children: <Widget>[
+                    tagAnalysis(color1: SandyBrownColor,color2: DarkBrownColor),
+                    tagAnalysis(color1: IndianRedColor,color2: DarkRedColor),
+                    tagAnalysis(color1: CadetBlueColor,color2: TealColor),
+                  ],
+                )
+            )
           ],
         ),
+      ),
+    );
+  }
+
+  Widget tagAnalysis({color1, color2}){
+    return Container(
+      width: MediaQuery.of(context).size.width *.7,
+      margin: EdgeInsets.symmetric(horizontal: 17, vertical: 20),
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors: [
+            color1,
+            color2
+          ],
+          begin: const FractionalOffset(0.0, 0.0),
+          end: const FractionalOffset(1.0, 0.0),
+          stops: [0.0, 1.0],
+          tileMode: TileMode.clamp,
+        ),
+        borderRadius:  BorderRadius.circular(15.0),
+      ),
+      child: Column(
+        children: <Widget>[
+          Padding(
+            padding: const EdgeInsets.only(left:37.0, right: 20, bottom: 10),
+            child: ListTile(
+              title: Text("Other Places", style: TextStyle(color: Colors.white,fontSize: 21),),
+              subtitle: Text("20 Days 22 Recordings",style: TextStyle(color: Colors.white),),
+              trailing: Icon(FontAwesomeIcons.mapMarkedAlt, size: 50,color: Colors.white,),
+            ),
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: <Widget>[
+              Column(
+                children: <Widget>[
+                  Text("25%",style: TextStyle(color: Colors.white, fontSize: 21),),
+                  Text("Great Mood",style: TextStyle(color: Colors.white),)
+                ],
+              ),
+              Column(
+                children: <Widget>[
+                  Text("25%",style: TextStyle(color: Colors.white, fontSize: 21),),
+                  Text("Great Mood",style: TextStyle(color: Colors.white),)
+                ],
+              ),
+              Column(
+                children: <Widget>[
+                  Text("25%",style: TextStyle(color: Colors.white, fontSize: 21),),
+                  Text("Great Mood",style: TextStyle(color: Colors.white),)
+                ],
+              )
+            ],
+          ),
+          SizedBox(height: 10,),
+
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Column(
+                children: <Widget>[
+                  Text("25%",style: TextStyle(color: Colors.white, fontSize: 21),),
+                  Text("Great Mood",style: TextStyle(color: Colors.white),)
+                ],
+              ),
+              Column(
+                children: <Widget>[
+                  Text("25%",style: TextStyle(color: Colors.white, fontSize: 21),),
+                  Text("Great Mood",style: TextStyle(color: Colors.white),)
+                ],
+              ),
+              Column(
+                children: <Widget>[
+                  Text("25%",style: TextStyle(color: DarkRedColor, fontSize: 21),),
+                  Text("Great Mood",style: TextStyle( color: DarkRedColor),)
+                ],
+              ),
+            ],
+          )
+        ],
       ),
     );
   }
