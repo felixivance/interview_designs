@@ -35,3 +35,4 @@ var loansData = [
 
 //hali me app
 const LightBlueColor = Color(0xFF35A7FF);
+const DarkBlueColor = Color(0xFF38618C);

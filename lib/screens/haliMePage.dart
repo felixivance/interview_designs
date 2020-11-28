@@ -121,7 +121,7 @@ class _HaliMePageState extends State<HaliMePage> {
                       height: size.height * 0.1,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.all(const Radius.circular(10.0)),
-                        color: LightBlueColor,
+                        color: DarkBlueColor,
                       ),
                       child: Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 30),
@@ -138,7 +138,11 @@ class _HaliMePageState extends State<HaliMePage> {
                   ),
                 ),
               ],
-            )
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left:10),
+              child: Text("Overall Mood Performance",style: TextStyle(fontSize: 30, color: BlueColor, ),),
+            ),
           ],
         ),
       ),
