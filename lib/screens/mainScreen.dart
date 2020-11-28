@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:interview_designs/config/constants.dart';
+import 'package:interview_designs/screens/bookKeeperPage.dart';
 import 'package:interview_designs/screens/haliMePage.dart';
 import 'package:interview_designs/screens/myLoans.dart';
 
@@ -74,7 +75,7 @@ class _MainScreenState extends State<MainScreen> {
             Center(
               child: MaterialButton(
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => HaliMePage()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => BookKeepaPage()));
                 },
                 color: DarkRedColor,
                 padding: EdgeInsets.symmetric(
