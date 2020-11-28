@@ -61,7 +61,31 @@ class _MainScreenState extends State<MainScreen> {
                   borderRadius: BorderRadius.circular(30),
                 ),
                 child: Text(
-                  'Hail Me',
+                  'Hail Me Design',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 24,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ),
+            SizedBox(height: 40,),
+            Center(
+              child: MaterialButton(
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => HaliMePage()));
+                },
+                color: DarkRedColor,
+                padding: EdgeInsets.symmetric(
+                  vertical: 15,
+                  horizontal: 30,
+                ),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(30),
+                ),
+                child: Text(
+                  'Book Keepa',
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 24,

@@ -32,7 +32,7 @@ class _HaliMePageState extends State<HaliMePage> {
               icon: new Stack(
                 children: <Widget>[
                    Card(
-                    child: Icon(FontAwesomeIcons.smile,color: Colors.black,size: 25,),
+                    child: Icon(Icons.face,color: Colors.black,size: 25,),
                   ),
                   new Positioned(
                     right: 0,
@@ -62,7 +62,24 @@ class _HaliMePageState extends State<HaliMePage> {
             ),
           )
         ],
-        leading: SizedBox(), //for screenshot purposes // comment to enable go back button
+        leading: SizedBox(),
+        //for screenshot purposes // comment to enable go back button
+      ),
+      bottomNavigationBar: Container(
+        padding: EdgeInsets.symmetric(horizontal: 50, vertical: 10),
+        height: 70,
+        color: Colors.white,
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: <Widget>[
+            Icon(Icons.gps_fixed,size: 30,),
+            Icon(Icons.insert_emoticon,size: 30,color: Colors.red,),
+            Icon(Icons.home,size: 30),
+            Icon(Icons.accessibility,size: 30),
+            Icon(Icons.whatshot,size: 30),
+
+          ],
+        ),
       ),
       body: SingleChildScrollView(
         child: Column(
