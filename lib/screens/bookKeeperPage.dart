@@ -25,14 +25,16 @@ class _BookKeepaPageState extends State<BookKeepaPage>  {
       key: _scaffoldKey,
       appBar: AppBar(
         centerTitle: true,
-        title: Text("Book Keepa"),
+        title: Text("PHLOEM", style: TextStyle(color: Colors.white),),
+        // backgroundColor: Colors.white,
+        elevation: 0.0,
       ),
       bottomNavigationBar: bottomNav(),
       body: SingleChildScrollView(
         child: Column(
           children: <Widget>[
             Padding(
-                padding: EdgeInsets.fromLTRB(8.0,5.0,8.0,8.0),
+                padding: EdgeInsets.fromLTRB(8.0,20.0,8.0,8.0),
                 child: InkWell(
                   onTap: (){
                   },
