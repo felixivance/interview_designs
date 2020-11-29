@@ -14,51 +14,54 @@ class _BookKeepaPageState extends State<BookKeepaPage> {
         centerTitle: true,
         title: Text("Book Keepa"),
       ),
-      bottomNavigationBar: Container(
-        padding: EdgeInsets.symmetric(horizontal: 50, vertical: 10),
-        height: 80,
-        color: Colors.white,
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: <Widget>[
-           Column(
-             children: <Widget>[
-               Icon(Icons.people,size: 30,color: Colors.blue,),
-               SizedBox(height: 5,),
-               Text("Teams",style: TextStyle(color: Colors.blue),)
-             ],
-           ),
-            Column(
-              children: <Widget>[
-                Icon(FontAwesomeIcons.briefcase,size: 30,),
-                SizedBox(height: 5,),
-                Text("Teams")
-              ],
-            ),
-            Column(
-              children: <Widget>[
-                Icon(FontAwesomeIcons.bell,size: 30,),
-                SizedBox(height: 5,),
-                Text("Requests")
-              ],
-            ),
-            Column(
-              children: <Widget>[
-                Icon(FontAwesomeIcons.home,size: 30,),
-                SizedBox(height: 5,),
-                Text("Admin")
-              ],
-            ),
-            Column(
-              children: <Widget>[
-                Icon(FontAwesomeIcons.user,size: 30,),
-                SizedBox(height: 5,),
-                Text("Account")
-              ],
-            ),
+      bottomNavigationBar: bottomNav()
+    );
+  }
 
-          ],
-        ),
+  Widget bottomNav(){
+    return Container(
+      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+      height: 80,
+      color: Colors.white,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+        children: <Widget>[
+          Column(
+            children: <Widget>[
+              Icon(Icons.people,size: 30,color: Colors.blue,),
+              SizedBox(height: 5,),
+              Text("Teams",style: TextStyle(color: Colors.blue),)
+            ],
+          ),
+          Column(
+            children: <Widget>[
+              Icon(FontAwesomeIcons.briefcase,size: 30,),
+              SizedBox(height: 5,),
+              Text("Supplies ")
+            ],
+          ),
+          Column(
+            children: <Widget>[
+              Icon(FontAwesomeIcons.bell,size: 30,),
+              SizedBox(height: 5,),
+              Text("Requests")
+            ],
+          ),
+          Column(
+            children: <Widget>[
+              Icon(FontAwesomeIcons.home,size: 30,),
+              SizedBox(height: 5,),
+              Text("Admin")
+            ],
+          ),
+          Column(
+            children: <Widget>[
+              Icon(FontAwesomeIcons.user,size: 30,),
+              SizedBox(height: 5,),
+              Text("Account")
+            ],
+          ),
+        ],
       ),
     );
   }
