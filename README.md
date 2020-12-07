@@ -18,6 +18,8 @@ Dashboard Page
 </p>
 
 
+Download the app from the releases tab and enjoy!
+
 
 Made By Felix Ivance
 
