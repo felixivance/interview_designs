@@ -6,10 +6,10 @@ Simple Modern and Clear
 
 
 <p align="center">
-  <img src="https://github.com/felixivance/interview_designs/blob/master/assets/screenshots/main.jpg" alt="main image" width="400" height="600"/>
-  <img src="https://github.com/felixivance/interview_designs/blob/master/assets/screenshots/dashboard.jpg" alt="main image" width="400" height="600"/>
-  <img src="https://github.com/felixivance/interview_designs/blob/master/assets/screenshots/loans.jpg" alt="main image" width="400" height="600"/>
-  <img src="https://github.com/felixivance/interview_designs/blob/master/assets/screenshots/hailme.jpg" alt="main image" width="400" height="600"/>
+  <img src="https://github.com/felixivance/interview_designs/blob/master/assets/screenshots/main.jpg" alt="main image" width="400" height="700"/>
+  <img src="https://github.com/felixivance/interview_designs/blob/master/assets/screenshots/dashboard.jpg" alt="main image" width="400" height="700"/>
+  <img src="https://github.com/felixivance/interview_designs/blob/master/assets/screenshots/loans.jpg" alt="main image" width="400" height="700"/>
+  <img src="https://github.com/felixivance/interview_designs/blob/master/assets/screenshots/hailme.jpg" alt="main image" width="400" height="700"/>
  
 </p>
 
