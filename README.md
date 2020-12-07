@@ -8,6 +8,7 @@ Simple Modern and Clear
 ![alt text](https://github.com/felixivance/interview_designs/blob/master/assets/screenshots/loans.jpg?raw=true)
 ![alt text](https://github.com/felixivance/interview_designs/blob/master/assets/screenshots/hailme.jpg?raw=true)
 
+<img src="https://github.com/felixivance/interview_designs/blob/master/assets/screenshots/main.jpg" alt="main image" width="250" height="455"/>
 
 Made By Felix Ivance
 
